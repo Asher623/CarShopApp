@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body id = "contact-body">
+    <header>
+      <nav>
+        <div class="categories">
+          <ul>
+            <li>
+              <a href="index.html"><img id="logo-cars" src="images/cars.png" alt=""/></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h2 style="margin: 5%; margin-left: 200px;">Contact Us</h2>
+    <p style = "margin-left: 200px; width: 500px; margin-top: -40px; margin-bottom: 30px;">Enter your personal information, so we can contact you. Specify your question, comment ro order problem.</p>
+    <form class="contact_email" action=" https://httpbin.org/post" method="post">
+      <div class="row">
+        <div class="col form-group">
+          <input id = "devName" type="hidden" name="hiddenName" value="Ivan Anferov">
+          <label for="firstname"><span class = "text-danger">*</span> First Name</label>
+          <input type="text" class = "form-control" autocomplete ="given-name" name="firstname" autofocus tabindex="1" required>
+        </div>
+        <div class="col form-group">
+          <label for="lastname"><span class = "text-danger">*</span> Last Name</label>
+          <input type="text" class = "form-control" autocomplete ="family-name" name="lastname" autofocus tabindex="1" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col form-group">
+          <label for="email"><span class = "text-danger">*</span> Email</label>
+          <input id="email" type="email" class = "form-control" autocomplete ="email" name="email" tabindex="2" required>
+        </div>
+        <div class="col form-group">
+          <label for="address"><span class = "text-danger">*</span> Address</label>
+          <input type="text" name="address" class = "form-control" autocomplete="street-address"  tabindex="3" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col form-group">
+          <label for="city"><span class = "text-danger">*</span> City</label>
+          <select class = "form-control" name="city" autocomplete="address-line2" required tabindex="4">
+            <option>Toronto</option>
+            <option>Vancouver</option>
+            <option>Ottawa</option>
+            <option>Quebec</option>
+            <option>Montreal</option>
+            <option>Edmonton</option>
+            <option>Calgary</option>
+          </select>
+        </div>
+        <div class="col form-group">
+          <label for="province"><span class = "text-danger">*</span> Province</label>
+          <select class = "form-control" name="province" autocomplete="address-line1" required tabindex="5">
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland and Labrador</option>
+            <option>Northwest Territories</option>
+            <option>Nove Scotia</option>
+            <option>Nunavut</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Quebec</option>
+            <option>Saskatchewan</option>
+            <option>Yukon</option>
+          </select>
+        </div>
+        <div class="col form-group">
+          <label for="postal-code"><span class = "text-danger">*</span> Postal Code</label>
+          <input type="text" name="postal-code" class = "form-control" autocomplete="postal-code"tabindex="6" placeholder="M5W 1E6" pattern="^[A-Za-z]\d[A-Za-z][ -]\d[A-Za-z]\d$" required>
+          <div class="invalid-feedback">
+            Enter a valid Canadian Postal Code
+          </div>
+        </div>
+      </div>
+      <div  class="row" id = "radiobtn">
+        <div class="col form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" value="question" type="radio" id = "question" name="radio" checked onclick="javascript:radioChoice();">
+            <label class="form-check-label" for="Question">Question</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" value="comment" type="radio" id = "comment" name="radio" onclick="javascript:radioChoice();">
+              <label class="form-check-label" for="Comment">Comment</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" value="order-problem" id = "order_problem" type="radio" name="radio" onclick="javascript:radioChoice();">
+              <label class="form-check-label" for="problem">Order Problem</label>
+            </div>
+            <div class="form-group">
+              <input id = "order_number" type="text" name="ordernumber" class = "form-control" style="width: 340px;" placeholder="Enter order number" pattern="[0-9]{8,9}">
+            </div>
+          </div>
+
+
+      </div>
+      <div class="row">
+        <label for="message">Message</label>
+        <textarea name="message" rows="8" class = "form-control"></textarea>
+
+      </div>
+      <div class="row">
+        <button id = "btn-contact" name="button" type="submit" >Submit</button>
+      </div>
+    </form>
+    <ul id="footer" style="min-width: 400px;">
+      <!--
+      icons https://www.stickpng.com
+      -->
+      <li>
+        <a
+          href="https://www.facebook.com/pages/category/Entertainment-Website/Cute-Cats-162212024341406/"
+        >
+          <img src="images/icons/facebook.png" width="40px" height="40px" alt="" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          ><img
+            src="images/icons/twitter.png"
+            style="margin-top: 4px;"
+            width="35px"
+            height="35px"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          ><img
+            src="images/icons/youtube.png"
+            style="margin-top: 5px;"
+            width="35px"
+            height="35px"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <form id ="subscribe" style="margin: 0; margin-left: 10%; margin-top: 17px;" action="https://formspree.io/mqkyndgy" method="POST">
+        <input id = "emailsub" type="email"  placeholder="Enter email" name="_replyto">
+        <button id = "btn" name="button" style="border-radius: 4px; width: 120px; height: 40px; " type="submit" >Subscribe</button>
+        </form>
+        </form>
+    </li>
+    </ul>
+    <script type="text/javascript">
+
+    window.onload = function(){
+
+      document.getElementById("order_number").style.display = 'none';
+
+      let form = document.querySelector("#contact_email")
+      //if The form is submetted, run this function to check is it is valid
+      form.onsubmit = function(event){
+        //check if form contains all required inputs
+        if(!form.checkValidity()){
+          //Show the error messsages
+          form.classList.add('was-validated');
+          event.preventDefault();
+          return false;
+        }
+        else{
+          return true;
+        }
+      }
+    }
+    function radioChoice(){
+      if (document.getElementById("order_problem").checked){
+        document.getElementById("order_number").style.display = 'block';
+      }else if (document.getElementById("comment").checked || document.getElementById("question").checked ){
+        document.getElementById("order_number").style.display = 'none';
+      }
+      else{
+        document.getElementById("order_number").style.display = 'none';
+      }
+    }
+
+    </script>
+  </body>
+</html>

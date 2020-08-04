@@ -1,0 +1,142 @@
+ul {
+  list-style-type: none;
+  margin: -10px;
+  margin-bottom: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #322f3d;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #59405c;
+}
+#logo-cars {
+  width: 80px;
+  height: 60px;
+}
+#types {
+  display: none;
+  position: absolute;
+  color: black;
+}
+#electric:hover #types {
+  display: block;
+}
+#gas:hover #types {
+  display: block;
+}
+#electric_category {
+  font-size: 2em;
+}
+#gas_category {
+  font-size: 2em;
+}
+#electric {
+  margin-top: 15px;
+  margin-left: 100px;
+}
+#gas {
+  margin-top: 15px;
+  margin-left: 70px;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+}
+#table-rows {
+  font-family: Arial, serif;
+}
+#price {
+  float: left;
+}
+#text {
+  font-size: 1.1em;
+  margin: 0;
+  max-width: 650px;
+  min-width: 500px;
+}
+#model {
+  font-size: 1.4em;
+  margin: 0;
+}
+#footer {
+  margin-top: 20px;
+  bottom: 0;
+  margin-bottom: 0;
+  flex-shrink: 0;
+  background-color: #4b5d67;
+}
+body {
+  background-color: #ececec;
+}
+
+#subscribe {
+  display: flex;
+}
+#btn{
+  margin-left: 10px;
+  border: 2px solid #322f3d;
+  background-color: #322f3d;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+#btn:hover{
+  background-color: white;
+  color: black;
+}
+
+#emailsub{
+  margin-top: 1px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 170px;
+  height: 34px;
+  font-size: 16px;
+}
+#contact{
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 1.3em;
+}
+
+.contact_email{
+  margin: 10px 200px 100px 200px;
+}
+#radiobtn{
+  margin-right: 200px;
+
+}
+#btn-contact{
+  margin-top: 30px;
+  border: 2px solid #322f3d;
+  background-color: #322f3d;
+  border-radius: 4px;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+#btn-contact:hover{
+  background-color: white;
+  color: black;
+}
+#contact-body{
+  background-color: #ececec;
+}

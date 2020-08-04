@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+  <body>
+    <header>
+      <nav>
+        <div class="categories">
+          <ul>
+            <li>
+              <a href="#"><img id="logo-cars" src="images/cars.png" alt=""/></a>
+            </li>
+            <li id="electric">
+              <a id="electric_category" href="#">ELECTRIC CARS</a>
+              <ul id="types">
+                <!--
+                icons https://www.stickpng.com
+                -->
+                <li id="Tesla">
+                  <a href="#"
+                    ><img
+                      style="vertical-align:middle; margin-right: 10px;"
+                      src="images/tesla.png"
+                      width="40"
+                      height="33"
+                      alt=""
+                    />Tesla</a
+                  >
+                </li>
+                <li id="Nissan">
+                  <a href="#"
+                    ><img
+                      style="vertical-align:middle; margin-right: 10px;"
+                      src="images/nissan.png"
+                      width="40"
+                      height="33"
+                      alt=""
+                    />Nissan</a
+                  >
+                </li>
+                <li id="Porsche">
+                  <a href="#"
+                    ><img
+                      style="vertical-align:middle; margin-right: 10px;"
+                      src="images/porsche.png"
+                      width="28"
+                      height="33"
+                      alt=""
+                    />Porsche</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li id="gas">
+              <a id="gas_category" href="#">GAS CARS</a>
+              <ul id="types">
+                <li id="Mercedes-Benz">
+                  <a href="#"
+                    ><img
+                      style="vertical-align:middle; margin-right: 10px;"
+                      src="images/mercedes.png"
+                      width="40"
+                      height="30"
+                      alt=""
+                    />Mercedes-Benz</a
+                  >
+                </li>
+                <li id="Toyota">
+                  <a href="#"
+                    ><img
+                      style="vertical-align:middle; margin-right: 10px;"
+                      src="images/toyota.png"
+                      width="40"
+                      height="30"
+                      alt=""
+                    />Toyota</a
+                  >
+                </li>
+                <li id="BMW">
+                  <a href="#"
+                    ><img
+                      style="vertical-align:middle; margin-right: 10px;"
+                      src="images/bmw.png"
+                      width="30"
+                      height="30"
+                      alt=""
+                    />BMW</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a id = "contact" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="box">
+      <table>
+        <tbody id="table-rows"></tbody>
+      </table>
+    </div>
+    <ul id="footer">
+      <!--
+      icons https://www.stickpng.com
+      -->
+      <li>
+        <a
+          href="https://www.facebook.com/pages/category/Entertainment-Website/Cute-Cats-162212024341406/"
+        >
+          <img src="images/icons/facebook.png" width="40px" height="40px" alt="" />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          ><img
+            src="images/icons/twitter.png"
+            style="margin-top: 4px;"
+            width="35px"
+            height="35px"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          ><img
+            src="images/icons/youtube.png"
+            style="margin-top: 5px;"
+            width="35px"
+            height="35px"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <form id ="subscribe" style="margin: 0; margin-left: 10%; margin-top: 17px; " action="https://formspree.io/mqkyndgy" method="POST">
+        <input id = "emailsub" type="email" class="form-control" placeholder="Enter email" name="_replyto">
+        <button id = "btn" name="button" type="submit" >Subscribe</button>
+        </form>
+    </li>
+    </ul>
+    <script src="car-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
