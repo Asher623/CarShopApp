@@ -52,22 +52,26 @@ h2 {
   font-size: 2em;
   font-weight: 300;
   margin: 0;
+  margin-left: 20px;
 }
 #table-rows {
   font-family: Arial, serif;
 }
 #price {
   float: left;
+  margin-left: 20px;
 }
 #text {
   font-size: 1.1em;
   margin: 0;
   max-width: 650px;
   min-width: 500px;
+  margin-left: 20px;
 }
 #model {
   font-size: 1.4em;
   margin: 0;
+  margin-left: 20px;
 }
 #footer {
   margin-top: 20px;
@@ -139,4 +143,24 @@ body {
 }
 #contact-body{
   background-color: #ececec;
+}
+@media screen and (max-width:2500px) and (min-width: 1300px){
+  #table-rows {
+    display:inline-flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+
+
+  }
+  #table-rows tr{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+  }
+  #text {
+    font-size: 1.1em;
+    margin: 0;
+    max-width: 100px;
+    min-width: 300px;
+  }
 }
