@@ -59,7 +59,7 @@
       tr.appendChild(trModel);
 
       let trPrice = document.createElement('tr');
-      let textPrice = document.createTextNode('Price: ' + new Intl.NumberFormat('en-CAD', {style: 'currency', currency: 'CAD', maximumSignificantDigits: 1}).format(car.price));
+      let textPrice = document.createTextNode('Price: ' + new Intl.NumberFormat('en-US', {style: 'currency', currency: 'CAD', maximumSignificantDigits: 1}).format(car.price));
       let priceP = document.createElement('p');
       priceP.setAttribute('id', 'price');
       priceP.appendChild(textPrice);
